@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 97vh;
+    background-color: #4285f4;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#selected {
+    background-color: #fff;
+    padding: 25px;
+    width: 30vw;
+    text-align: left;
+    font-size: 25px;
+    border-radius: 20px;
+}
+
+.fa-angle-down {
+    vertical-align: bottom;
+    margin-left: 15px;
+}
+
+input {
+    display: none;
+}
+
+.options {
+    display: none;
+}
+
+.block {
+    display: block;
+}
+
+.countrySearchbar {
+    border: 2px solid black;
+    outline: none;
+    width: 28vw;
+    height: 40px;
+    display: block;
+    border-radius: 5px;
+    margin-left: 2vw;
+    margin-right: 2vw;
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 0 20px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.contentWrapper {
+    margin-top: 30px;
+    background-color: #fff;
+    width: 33vw;
+    border-radius: 10px;
+    display: block;
+    overflow-y: auto;
+    overflow-x: hidden;
+    max-height: 50vh;
+    padding-bottom: 20px;
+}
+
+#content-wrapper li {
+    list-style-type: none;
+    padding-left: 2vw;
+    line-height: 2;
+    font-size: 20px;
+}
+
+@media (max-width: 500px) {
+    #selected {
+        padding: 10px;
+        width: 90vw;
+    }
+    .contentWrapper {
+        width: 92vw;
+    }
+    .countrySearchbar {
+        width: 85vw;
+    }
+}
